@@ -22,6 +22,10 @@ app.get('/poster1', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'poster1.html'));
 });
 
+app.get('/poster2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'poster2.html'));
+});
+
 // 首页
 app.get('/', async (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
