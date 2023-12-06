@@ -1,0 +1,44 @@
+/**
+ * poster.css
+ *
+ * @format
+ */
+
+/* Basic reset to remove margin, padding, and set box-sizing to avoid unexpected sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure that the image does not exceed the viewport width and is centered */
+.poster-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Make container at least as tall as the viewport */
+  padding: 20px; /* Add some padding around the image */
+  background-color: #f8f8f8; /* You can change this to match your design */
+}
+
+/* Style the image to be responsive */
+.poster-container img {
+  width: 100%; /* Make the image width responsive to the container */
+  max-width: 600px; /* You can set a max-width to avoid the image being too large on big screens */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space beneath the image */
+}
+
+/* Optionally, you can add a media query for very large screens where the max-width of the image can be increased */
+@media (min-width: 768px) {
+  .poster-container img {
+    max-width: 90%;
+  }
+}
+
+/* For mobile devices, ensure no horizontal scrolling occurs due to padding */
+@media (max-width: 767px) {
+  .poster-container {
+    padding: 10px;
+  }
+}
