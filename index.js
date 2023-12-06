@@ -26,6 +26,18 @@ app.get('/poster2', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'poster2.html'));
 });
 
+app.get('/poster3', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'poster3.html'));
+});
+
+app.get('/poster4', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'poster4.html'));
+});
+
+app.get('/poster5', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'poster5.html'));
+});
+
 // 首页
 app.get('/', async (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
