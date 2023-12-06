@@ -1,5 +1,12 @@
 {
-  "containers": [],
+  "containers": [
+    {
+      "name": "express-produc-display",
+      "domain": "",
+      "ip": "",
+      "mode": "compose"
+    }
+  ],
   "config": {
     "express-produc-display": {
       "containerPort": 80,

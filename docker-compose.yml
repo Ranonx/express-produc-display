@@ -1,0 +1,26 @@
+# @format
+
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - '27081:80'
+    container_name: wxcloud_express-produc-display
+    labels:
+      - wxPort=27082
+      - hostPort=27081
+      - wxcloud=express-produc-display
+      - role=container
+    environment:
+      - MYSQL_USERNAME=root
+      - MYSQL_PASSWORD=Rc19931020
+      - MYSQL_ADDRESS=sh-cynosdbmysql-grp-dus488m2.sql.tencentcdb.com:23953
+networks:
+  wxcb0:
+    external: true

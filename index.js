@@ -17,6 +17,11 @@ app.use(logger);
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Serve 'poster1.html' at route '/about'
+app.get('/poster1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'poster1.html'));
+});
+
 // 首页
 app.get('/', async (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
