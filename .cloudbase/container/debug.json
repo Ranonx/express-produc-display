@@ -4,7 +4,8 @@
       "name": "express-produc-display",
       "domain": "",
       "ip": "",
-      "mode": "compose"
+      "mode": "compose",
+      "containerId": "ce4a899fc1bb932bd10a3b75667af92c081b6258e5a64e4556c8f08df288e282"
     }
   ],
   "config": {
