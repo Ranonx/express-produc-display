@@ -43,7 +43,7 @@ body {
   display: flex;
 }
 
-header,
+/* header,
 footer {
   background-color: black;
   color: white;
@@ -51,16 +51,4 @@ footer {
   padding: 20px;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-header .logo {
-  float: left;
-  max-width: 100px; /* Adjust based on your logo size */
-  height: auto;
-  margin-right: 30px;
-}
-
-header .title {
-  margin: 0;
-  line-height: 100px; /* Adjust based on your logo height */
-}
+} */
