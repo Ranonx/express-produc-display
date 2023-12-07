@@ -17,10 +17,6 @@ app.use(logger);
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/product', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'product.html'));
-});
-
 app.get('/poster1', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'poster1.html'));
 });
@@ -44,6 +40,10 @@ app.get('/poster5', (req, res) => {
 // 首页
 app.get('/', async (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/product', (req, res) => {
+  res.sendFile(path.join(__dirname, 'product.html'));
 });
 
 // 获取计数
