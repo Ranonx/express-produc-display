@@ -37,6 +37,24 @@ app.get('/poster5', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'poster5.html'));
 });
 
+// Product
+
+app.get('/product1', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'product1.html'));
+});
+
+app.get('/product2', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'product2.html'));
+});
+
+app.get('/product3', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'product3.html'));
+});
+
+app.get('/product4', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'product4.html'));
+});
+
 // 首页
 app.get('/', async (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
