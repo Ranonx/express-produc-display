@@ -1,0 +1,32 @@
+/** @format */
+
+.back-button {
+  position: fixed;
+  top: 2vh; /* 2% of the viewport's height from the top */
+  left: 2vw; /* 2% of the viewport's width from the left */
+  width: 8vw; /* 8% of the viewport's width */
+  height: 8vw; /* 8% of the viewport's height */
+  background: url('public/images/angle-left.svg') no-repeat center center;
+  background-size: 50%; /* size of the image inside the button */
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Increase size for larger screens if necessary */
+@media (min-width: 768px) {
+  .back-button {
+    width: 6vw; /* slightly smaller relative to the larger viewport */
+    height: 6vw; /* keep the width and height equal for a square button */
+    background-size: 60%; /* Adjust background size as needed */
+  }
+}
+
+/* Ensure the button is not too small on very small viewports */
+@media (max-width: 320px) {
+  .back-button {
+    width: 12vw; /* larger percentage of the viewport width */
+    height: 12vw; /* larger percentage of the viewport height */
+    background-size: 70%; /* adjust the image size within the button */
+  }
+}
