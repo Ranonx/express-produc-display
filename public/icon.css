@@ -2,10 +2,11 @@
 
 .back-button {
   position: fixed;
-  top: 2.5vh; /* 2% of the viewport's height from the top */
-  left: 2.5vw; /* 2% of the viewport's width from the left */
-  width: 7vw; /* 8% of the viewport's width */
-  height: 7vw; /* 8% of the viewport's height */
+  opacity: 0.7; /* 70% opaque, adjust the value as needed */
+  top: 3vh; /* 2% of the viewport's height from the top */
+  left: 4.5vw; /* 2% of the viewport's width from the left */
+  width: 6vw; /* 8% of the viewport's width */
+  height: 6vw; /* 8% of the viewport's height */
   background: url('public/images/angle-left.svg') no-repeat center center;
   background-size: 50%; /* size of the image inside the button */
   border: none;
