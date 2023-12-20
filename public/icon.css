@@ -15,6 +15,10 @@
   z-index: 1000;
 }
 
+.back-button:focus {
+  opacity: 0.9; /* Reduced opacity when focused */
+}
+
 /* Increase size for larger screens if necessary */
 @media (min-width: 768px) {
   .back-button {
