@@ -7,6 +7,7 @@
   left: 4.5vw; /* 4.5% of the viewport's width from the left */
   width: 6vw; /* 6% of the viewport's width */
   height: 6vw; /* 6% of the viewport's height */
+  transition: opacity 0.3s ease;
   background: url('public/images/angle-left.svg') no-repeat center center;
   background-size: 50%; /* size of the image inside the button */
   border: none;
