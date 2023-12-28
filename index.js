@@ -65,20 +65,20 @@ app.get('/product', (req, res) => {
 });
 
 // 获取计数
-app.get('/api/count', async (req, res) => {
-  const result = await Counter.count();
-  res.send({
-    code: 0,
-    data: result,
-  });
-});
+// app.get('/api/count', async (req, res) => {
+//   const result = await Counter.count();
+//   res.send({
+//     code: 0,
+//     data: result,
+//   });
+// });
 
 // 小程序调用，获取微信 Open ID
-app.get('/api/wx_openid', async (req, res) => {
-  if (req.headers['x-wx-source']) {
-    res.send(req.headers['x-wx-openid']);
-  }
-});
+// app.get('/api/wx_openid', async (req, res) => {
+//   if (req.headers['x-wx-source']) {
+//     res.send(req.headers['x-wx-openid']);
+//   }
+// });
 
 const port = process.env.PORT || 80;
 
